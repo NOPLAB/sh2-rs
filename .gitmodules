@@ -1,0 +1,3 @@
+[submodule "bindgen/sh2"]
+	path = bindgen/sh2
+	url = https://github.com/ceva-dsp/sh2
