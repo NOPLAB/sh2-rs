@@ -5,5 +5,5 @@ edition = "2021"
 build = "build.rs"
 
 [build-dependencies]
-bindgen = "0.71.0"
+bindgen = "0.72.0"
 cc = "1.1.13"
