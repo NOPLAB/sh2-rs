@@ -1,0 +1,22 @@
+sh2-rs
+Copyright 2025 nop
+
+This software includes the following third-party components:
+
+================================================================================
+
+SH2 Sensorhub Driver
+Source: https://github.com/ceva-dsp/sh2
+Location: bindgen/sh2/
+
+This software is licensed from CEVA, Inc.
+Copyright (c) CEVA, Inc. and its licensors. 
+All rights reserved.  
+
+CEVA and the CEVA logo are trademarks of CEVA, Inc.
+
+You can contact CEVA, Sensor Fusion Business Unit on the web at 
+https://www.ceva-dsp.com/app/motion-sensing/ or at
+15245 Shady Grove Road, Suite 400, Rockville, MD 20850 USA
+
+================================================================================
