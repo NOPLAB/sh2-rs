@@ -2,6 +2,8 @@
 name = "sh2"
 version = "0.1.2"
 edition = "2021"
+description = "Rust bindings for the CEVA SH-2 sensor hub driver (BNO08x)"
+repository = "https://github.com/NOPLAB/sh2-rs"
 license = "MIT"
 build = "build.rs"
 
