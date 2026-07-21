@@ -22,6 +22,16 @@ fn main() {
         .file("bindgen/sh2/shtp.c")
         .compile("sh2");
 
+    // bindgen reads these but does not emit the rerun trigger itself
+    println!("cargo::rerun-if-env-changed=BINDGEN_EXTRA_CLANG_ARGS");
+    if let Ok(target) = env::var("TARGET") {
+        println!("cargo::rerun-if-env-changed=BINDGEN_EXTRA_CLANG_ARGS_{target}");
+        println!(
+            "cargo::rerun-if-env-changed=BINDGEN_EXTRA_CLANG_ARGS_{}",
+            target.replace('-', "_")
+        );
+    }
+
     // Rerun if any source files change
     println!("cargo::rerun-if-changed=bindgen/bindgen.h");
     println!("cargo::rerun-if-changed=bindgen/sh2/euler.c");

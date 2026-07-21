@@ -1,3 +1,4 @@
 [submodule "bindgen/sh2"]
 	path = bindgen/sh2
-	url = https://github.com/ceva-dsp/sh2
+	url = https://github.com/NOPLAB/sh2
+	branch = sh2-rs-patches
